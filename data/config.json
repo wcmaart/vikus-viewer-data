@@ -1,0 +1,103 @@
+{
+  "project": {
+    "name": "WCMA EXPLORER",
+    "quality": 3
+ },
+  "loader": {
+    "info": "data/info.md",
+    "timeline": "data/timeline.csv",
+    "items": "data/data.csv",
+    "tsne": "data/tsne.csv",
+    "grid": "data/colors.csv",
+    "textures": {
+      "medium": {
+        "size": 100,
+        "url": "thumbs/sprites/web_web_full.json"
+      },
+      "detail": {
+        "size": 1024,
+        "url": "thumbs/1024/"
+      },
+      "big": {
+        "size": 4096,
+        "url": "thumbs/4096/"
+      }
+    }
+  },
+  "style": {
+    "fontColor": "#2d3b43",
+    "fontColorActive": "#eae2cb",
+    "fontBackground": "#295b71",
+    "textShadow": "1px 1px 0px #f8f4e9",
+    "canvasBackground": "#cccccc",
+    "timelineBackground": "#fff9eb",
+    "timelineFontColor": "#000",
+    "backgroundHeader": "#035151",
+    "fontColorHeader": "#f8774f",
+    "detailBackground": "#EEE",
+    "infoBackground": "#33444c",
+    "infoFontColor": "#fff",
+    "searchbarBackground": "#295b71"
+  },
+  "projection": {
+    "columns": 3
+  },
+  "detail": {
+    "structure": [      
+      {
+        "name": "Title",
+        "source": "_description",
+        "display": "column",
+        "type": "text"
+      },
+      {
+        "name": "Date",
+        "source": "_time",
+        "display": "column",
+        "type": "text"
+      },
+      {
+        "name": "Artist",
+        "source": "_maker",
+        "display": "column",
+        "type": "text"
+      },
+      {
+        "name": "Accession",
+        "source": "_accession_number",
+        "display": "column",
+        "type": "text"
+      },
+      {
+        "name": "Material",
+        "source": "_material",
+        "display": "column",
+        "type": "text"
+      },
+      {
+        "name": "Dimensions",
+        "source": "column._width + 'cm x ' + column._height + 'cm'",
+        "display": "column",
+        "type": "function"
+      },
+      {
+        "name": "Keywords",
+        "source": "_keywords",
+        "display": "column",
+        "type": "array"
+      },
+      {
+        "name": "Id",
+        "source": "_id",
+        "display": "column",
+        "type": "text"
+      },
+      {
+        "name": "Accession date",
+        "source": "_year",
+        "display": "column",
+        "type": "text"
+      }
+    ]
+  }
+}
