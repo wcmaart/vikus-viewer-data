@@ -6,7 +6,7 @@
   "loader": {
     "info": "data/info.md",
     "timeline": "data/timeline.csv",
-    "items": "data/data.csv",
+    "items": "data/data-filtered.csv",
     "tsne": "data/tsne.csv",
     "grid": "data/colors.csv",
     "textures": {
